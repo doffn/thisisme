@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(40, 135, 135);
+}
+.back {
+    margin-top: 14px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: url("buttonimg.jpg") no-repeat left;
+    margin-left:45%;
+    margin-bottom: 34px;
+}
+
+
+.text{
+    font-size: large;
+    font-family:fantasy;
+    width:fit-content;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 20px;
+}
+
+.Translate{
+    font-size:x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 15%;
+    height: 50px;
+    border-radius: 20px ;
+    background-color: transparent;
+    margin-left: 25%;
+    
+}
+
+.Translate:hover{
+    border-color: rgb(25, 236, 89);
+    color: rgb(23, 238, 62);
+}
+
+.Reset{
+    font-size:x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 15%;
+    height: 50px;
+    border-radius: 20px ;
+    background-color: transparent;
+    margin-left: 10%;
+}
+
+.Reset:hover{
+    border-color: red;
+    color: red;
+}
+
+input[type=text], select, textarea {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #844747;
+    resize: vertical;
+    height:200px;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    background-color: transparent;
+    color: aliceblue;
+    float: left;
+  }
+
+.input[type=text], select, textarea:hover{
+    background-color: aliceblue;
+    color: black;
+}

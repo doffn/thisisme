@@ -1,0 +1,77 @@
+
+
+
+<html>
+<head>
+<title>Video Calling App</title>
+
+</head>
+<body>
+    <h1>Sign In</h1>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button id="signin">Sign In</button>
+    <h1>Video Calling App</h1>
+    <input type="text" id="requestUsername" placeholder="Username">
+    <button id="sendRequest">Send Request</button>
+    <button id="videoCall">Video Call</button>
+    <button id="endCall">End Call</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    //Sign in/Login Screen
+    $(document).ready(function(){
+        $("#signin").click(function(){
+            var username = $("#username").val();
+            var password = $("#password").val();
+            //Check if username and password are valid
+            if(username != "" && password != ""){
+                //Read CSV file
+                $.ajax({
+                    url: "data.csv",
+                    dataType: "text",
+                    success: function(data) {
+                        var userData = data.split(/\r?\n|\r/);
+                        var flag = 0;
+                        for(var count = 0; count < userData.length; count++){
+                            var cellData = userDatacount.split(",");
+                            if(username == cellData0 && password == cellData1){
+                                flag = 1;
+                                break;
+                            }
+                        }
+                        if(flag == 1){
+                            //Login Successful
+                            alert("Login Successful");
+                            //Video Calling App
+                            //Send Request
+                            $("#sendRequest").click(function(){
+                                var requestUsername = $("#requestUsername").val();
+                                //Send Request
+                                alert("Request sent to "+requestUsername);
+                            });
+                            //Video Call
+                            $("#videoCall").click(function(){
+                                //Show two screens
+                                alert("Video Call Started");
+                                //Chat
+                                //End Video Call
+                                $("#endCall").click(function(){
+                                    alert("Video Call Ended");
+                                });
+                            });
+                        }
+                        else{
+                            alert("Invalid username or password");
+                        }
+                    }
+                });
+            }
+            else{
+                alert("Please enter username and password");
+            }
+        });
+    });
+    </script>
+</body>
+</html>

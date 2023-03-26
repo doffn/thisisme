@@ -1,0 +1,100 @@
+main{
+    background-color: rgb(201, 145, 77);
+}
+
+.btn{
+    border: none;
+    width: 100%;
+    background-color: inherit;    
+    padding: 14px 94px 2px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 20px;
+    background-image: url('buttonimg.jpg');
+    background-size: cover;
+    color:rgb(58, 252, 210);}
+ 
+ 
+
+.one:hover {
+    color: rgb(30, 252, 78);
+    border: 2px solid}
+    
+
+.two:hover {
+    color: rgb(242, 245, 49);
+    border: 2px solid}
+
+.three:hover {
+    color: rgb(240, 77, 23);
+    border: 2px solid;}
+
+.four:hover {
+    color: rgb(153, 118, 237);
+    border: 2px solid;}
+
+.five:hover {
+    color: rgb(34, 18, 247);
+    border: 2px solid;}
+
+
+
+#intro{
+    text-align: center;
+    color: rgb(25, 169, 116);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+#intro_note{
+    color:rgb(63, 44, 44);
+}
+
+
+#ul{
+    background-color: azure;
+    list-style-type:square;
+    width: 30%;
+    border: 2px solid rgb(47, 109, 47);
+    margin: 2px;
+}
+
+
+.note{
+    background-color: azure;
+    list-style-type:square;
+    width: 65%;
+    border: 2px solid rgb(47, 109, 47);
+    margin: 2px;
+}
+
+.split {
+    height:fit-content;
+    position: absolute;
+    overflow-x:hidden;
+    padding-top: 20px;
+    margin-bottom: 200px;
+  }
+
+.content {
+    border: none;
+    height: 50%;
+    margin: 0;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: inline-block;
+    background-size: cover;
+  }
+.content:hover{
+    color: red;
+    }
+
+.note {
+    width: 68.5%;
+    left: 30.7%;
+    height:100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }

@@ -1,0 +1,136 @@
+body{
+    background-color: rgb(40, 135, 135);
+}
+ /*this is used for the timer*/
+#clockContainer {
+    margin-top: 14px;
+    margin-right:55%;
+    position: relative;
+    margin: auto;
+    height: 50px;
+    background: url("buttonimg.jpg") no-repeat left;
+    width: 50px;
+    border: 2px solid rgb(183, 255, 0);
+    border-radius: 100%;
+
+    }
+    
+    #hour,
+    #minute,
+    #second {
+    position: absolute;
+    background: rgb(183, 255, 0);
+    border-radius: 10px;
+    transform-origin: bottom;
+    }
+    
+    #hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+    }
+    
+    #minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+    }
+    
+    #second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+    }
+
+/* this is used for the welcoming note*/
+
+.text{
+    font-size: large;
+    font-family:fantasy;
+    width:fit-content;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+/*start and stop button*/
+
+.Record{
+    font-size:x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 15%;
+    height: 50px;
+    border-radius: 20px ;
+    background-color: transparent;
+    margin-left: 25%;
+}
+
+.Record:hover{
+    border-color: rgb(25, 236, 89);
+    color: rgb(23, 238, 62);
+}
+
+.Stop{
+    font-size:x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 15%;
+    height: 50px;
+    border-radius: 20px ;
+    background-color: transparent;
+    margin-left: 25%;
+}
+
+.Stop:hover{
+    border-color: red;
+    color: red;
+}
+
+/*this is the code for the video stream*/
+
+#basic {
+    background: #000;
+    border: 1px solid #ccc;
+    width: 300px;
+    height: 200px;
+
+    
+    
+  }
+  
+  video, #cssfilters-video, #screenshot-img {
+      width: 300px;
+      height: 200px;
+  }
+  audio, canvas, video {
+      display: inline-block;
+  }
+  
+ 
+.videoDisplay{
+
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    grid-gap:5px;
+    position: relative;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.part{
+    
+    margin: 5px;
+}
+
+
+
+
